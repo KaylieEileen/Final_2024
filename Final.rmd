@@ -54,6 +54,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+The numerical summary shows that 74% of males who took the placebo got covid19 whereas 26% of males who took the vaccine got covid19.   
 
 #### Inferential Results
 
