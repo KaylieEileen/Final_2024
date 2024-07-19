@@ -116,6 +116,11 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+The chi-squared test has a p-valye of 0.00000001914.      
+This means we reject the null hypothesis because the p-value of the chi-squared is less than 0.5.    
+The Fisher exact test had a p-value of 0.00000001246.      
+The odds ratio shows that females who took the placebo are 1.8 more times likely to get covid19 than those who took the vaccine.      
+This means we reject the null hypothesis because the p-value of the fisher exact test is less than 0.5.    
 
 # Conclusion 
 
