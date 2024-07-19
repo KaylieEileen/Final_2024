@@ -97,6 +97,8 @@ barchartGC(~infected + treatment,data=females, type="percent")
 
 ```
 
+The barchart shows that females who took the vaccine were less likely to get infected with covid19 than the females who took the placebo.   
+
 #### Numerical Results
 ```{r}
 table1 <- xtabs(~treatment + infected, data=females)
