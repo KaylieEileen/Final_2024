@@ -191,7 +191,6 @@ The odds ratio in the Fisher exact test shows that the LGBTQ who took the placeb
 This means we reject the null hypothesis that covid921 vaccine is not effective in the LGBTQ.        
 
 
-
 ## Drug Users
 $H_0$:The covid921 vaccine is not effective in drug users 
 
@@ -216,12 +215,17 @@ barchartGC(~infected + treatment,data=DrugUser, type="percent")
 
 ```
 
+The barchart shows that Drug users who took the vaccine were more likely to get infected with covid19 than Drug users who took the placebo.    
+
+
 #### Numerical Results
 ```{r}
 table1 <- xtabs(~infected + treatment, data=DrugUser)
 rowPerc(table1)
 colPerc(table1)
 ```
+
+
 
 #### Inferential Results
 ```{r}
