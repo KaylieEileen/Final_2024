@@ -174,7 +174,14 @@ chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
-# Conclusion
+
+The chi-squared test has a p-valye of 0.000002266      
+This means we reject the null hypothesis because the p-value of the chi-squared is less than 0.5.    
+The Fisher exact test had a p-value of 0.000000269      
+The odds ratio shows that the LGBTQ who took the placebo are 4.2 more times likely to get covid19 than those who took the vaccine.      
+This means we reject the null hypothesis because the p-value of the fisher exact test is less than 0.5.    
+
+### Conclusion
 
 ## Drug Users
 $H_0$:The covid921 vaccine is not effective in drug users 
