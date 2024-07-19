@@ -156,6 +156,8 @@ barchartGC(~infected + treatment,data=LGBTQ, type="percent")
 
 ```
 
+The barchart shows that the LGBTQ who took the vaccine were less likely to get infected with covid19 than the LGBTQ who took the placebo.    
+
 #### Numerical Results
 ```{r}
 table1 <- xtabs(~infected + treatment, data=LGBTQ)
