@@ -225,7 +225,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The numerical summary shows that 0.33% of the LGBTQ who took the placebo got covid19 whereas 99.7% of the LGBTQ who took the vaccine got covid19.      
+The numerical summary shows that 0.33% of Drug users who took the placebo got covid19 whereas 99.7% of Drug users who took the vaccine got covid19.      
 
 
 #### Inferential Results
@@ -235,6 +235,10 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-
+The chi-squared test has a p-valye of 0.0000000001414.                    
+This means we reject the null hypothesis because the p-value of the chi-squared is less than 0.5.          
+The Fisher exact test had a p-value of 0.000000000003261.                
+The odds ratio shows that Drug users who took the placebo are 0.078 times likely to get covid19 than those who took the vaccine.                
+This means we reject the null hypothesis because the p-value of the fisher exact test is less than 0.5.       
 
 # Conclusion. 
