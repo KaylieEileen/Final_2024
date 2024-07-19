@@ -165,6 +165,9 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+The numerical summary shows that 97% of the LGBTQ who took the placebo got covid19 whereas 3% of the LGBTQ who took the vaccine got covid19.     
+
+
 #### Inferential Results
 ```{r}
 chisq.test(table1)
