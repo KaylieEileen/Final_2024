@@ -64,17 +64,17 @@ fisher.test(table1)
 ```
 
 The chi-squared test has a p-valye of 0.00000000000000022.      
-This means we reject the null hypothesis because the p-value of the chi-squared is less than 0.5.    
+This means we reject the null hypothesis because the p-value of the chi-squared is less than 0.05.    
 The Fisher exact test also had a p-value of 0.00000000000000022.      
 The odds ratio shows that males who took the placebo are 2.8 more times likely to get covid19 than those who took the vaccine.      
-This means we reject the null hypothesis because the p-value of the fisher exact test is less than 0.5.     
+This means we reject the null hypothesis because the p-value of the fisher exact test is less than 0.05.     
 
 ### Conclusion 
 We conclude that the barchart shows males who took the vaccine were less likely to get infected with covid19 than the males who took the placebo.      
 The Numerical summary shows that that 74% of males who took the placebo got covid19 whereas 26% of males who took the vaccine got covid19.   
 The inferential results show that both the chi-squared test and Fisher exact test had a p-value of 0.00000000000000022.     
 The odds ratio in the Fisher exact test shows that males who took the placebo are 2.8 more times likely to get covid19 than those who took the vaccine.  
-This means we reject the null hypothesis that covid921 vaccine is not effective in males.
+This means we reject the null hypothesis that covid921 vaccine is not effective in males because both p-value's were less than 0.05.   
 
 ## Females
 $H_0$:The covid921 vaccine is not effective in females 
@@ -117,19 +117,19 @@ fisher.test(table1)
 ```
 
 The chi-squared test has a p-valye of 0.00000001914.      
-This means we reject the null hypothesis because the p-value of the chi-squared is less than 0.5.    
+This means we reject the null hypothesis because the p-value of the chi-squared is less than 0.05.    
 The Fisher exact test had a p-value of 0.00000001246.      
 The odds ratio shows that feamles who took the placebo are 1.8 more times likely to get covid19 than those who took the vaccine.      
-This means we reject the null hypothesis because the p-value of the fisher exact test is less than 0.5.    
+This means we reject the null hypothesis because the p-value of the fisher exact test is less than 0.05.    
 
 ### Conclusion 
 We conclude that the barchart shows females who took the vaccine were less likely to get infected with covid19 than the females who took the placebo.         
 The Numerical summary shows that that 65% of females who took the placebo got covid19 whereas 35% of females who took the vaccine got covid19.        
 The inferential results show that the chi-squared test had a p-value of 0.00000001914.    
-This means we reject the null hypothesis that covid921 vaccine is not effective in females.
+This means we reject the null hypothesis that covid921 vaccine is not effective in females because the p-value is less than 0.05.    
 The Fisher exact test had a p-value of 0.00000001246.          
 The odds ratio in the Fisher exact test shows that females who took the placebo are 1.8 more times likely to get covid19 than those who took the vaccine.       
-This means we reject the null hypothesis that covid921 vaccine is not effective in females.  
+This means we reject the null hypothesis that covid921 vaccine is not effective in females because the p-value is less than 0.05.    
 
 
 ## LGBTQ
@@ -176,19 +176,19 @@ fisher.test(table1)
 ```
 
 The chi-squared test has a p-valye of 0.000002266.              
-This means we reject the null hypothesis because the p-value of the chi-squared is less than 0.5.       
+This means we reject the null hypothesis because the p-value of the chi-squared is less than 0.05.       
 The Fisher exact test had a p-value of 0.000000269.           
 The odds ratio shows that the LGBTQ who took the placebo are 4.2 more times likely to get covid19 than those who took the vaccine.            
-This means we reject the null hypothesis because the p-value of the fisher exact test is less than 0.5.          
+This means we reject the null hypothesis because the p-value of the fisher exact test is less than 0.05.          
 
 ### Conclusion
 We conclude that the barchart shows the LGBTQ who took the vaccine were less likely to get infected with covid19 than the LGBTQ who took the placebo.            
 The Numerical summary shows that that 97% of the LGBTQ who took the placebo got covid19 whereas 3% of the LGBTQ who took the vaccine got covid19.            
 The inferential results show that the chi-squared test had a p-value of 0.000002266.       
-This means we reject the null hypothesis that covid921 vaccine is not effective in the LGBTQ.   
-The Fisher exact test had a p-value of 0.000000269.              
+This means we reject the null hypothesis that covid921 vaccine is not effective in the LGBTQ because the p-value is less than 0.05.     
+The Fisher exact test had a p-value of 0.000000269.               
 The odds ratio in the Fisher exact test shows that the LGBTQ who took the placebo are 1.8 more times likely to get covid19 than those who took the vaccine.          
-This means we reject the null hypothesis that covid921 vaccine is not effective in the LGBTQ.        
+This means we reject the null hypothesis that covid921 vaccine is not effective in the LGBTQ because the p-value is less than 0.05.          
 
 
 ## Drug Users
@@ -236,10 +236,10 @@ fisher.test(table1)
 ```
 
 The chi-squared test has a p-valye of 0.0000000001414.                    
-This means we reject the null hypothesis because the p-value of the chi-squared is less than 0.5.          
+This means we reject the null hypothesis because the p-value of the chi-squared is less than 0.05.          
 The Fisher exact test had a p-value of 0.000000000003261.                
 The odds ratio shows that Drug users who took the placebo are 0.078 times less likely to get covid19 than those who took the vaccine.                
-This means we reject the null hypothesis because the p-value of the fisher exact test is less than 0.5.       
+This means we reject the null hypothesis because the p-value of the fisher exact test is less than 0.05.       
 
 ### Conclusion. 
 We conclude that the barchart shows Drug users who took the vaccine were more likely to get infected with covid19 than Drug users who took the placebo.               
@@ -247,4 +247,4 @@ The Numerical summary shows that that 0.33% of Drug users who took the placebo g
 The inferential results show that the chi-squared test had a p-value of 0.0000000001414.   
 The Fisher exact test had a p-value of 0.000000000003261.                  
 The odds ratio in the Fisher exact test shows that Drug users who took the placebo are 0.078 times less likely to get covid19 than those who took the vaccine.               
-Although the graphical and numerical summaries show that Drug users who took the placebo were less likely to get covid19 than those who took the vaccine, we conclude that we reject the null hypotheis that covid921 vaccine is not effective in Drug users because the p-value of the chi-squared test and Fisher exact test were less than 0.5.   
+Although the graphical and numerical summaries show that Drug users who took the placebo were less likely to get covid19 than those who took the vaccine, we conclude that we reject the null hypotheis that covid921 vaccine is not effective in Drug users because the p-value of the chi-squared test and Fisher exact test were less than 0.05.   
