@@ -29,8 +29,8 @@ $H_0$:The covid921 vaccine is not effective in males
 $H_A$:The covid921 vaccine is effective in males 
 
 ###  Methods
-is a categorical variable   
-is a categorical variable   
+treatment is a categorical variable   
+infected is a categorical variable   
 So we use is cat~cat helper file   
  
 ### Descriptive Results 
@@ -63,10 +63,18 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The chi-squared test and the fisher exact test have the same p-value of 0.00000000000000022.  
-The odds ratio shows that males who took the placebo are 2.8 more times likely to get covid19 than those who took the vaccine.    
-This means we reject the null hypothesis because the p-value is less than 0.5.  
+The chi-squared test has a p-valye of 0.00000000000000022.     
+This means we reject the null hypothesis because the p-value of the chi-squared is less than 0.5.    
+The Fisher exact test also had a p-value of 0.00000000000000022.      
+The odds ratio shows that males who took the placebo are 2.8 more times likely to get covid19 than those who took the vaccine.      
+This means we reject the null hypothesis because the p-value of the fisher exact test is less than 0.5.     
 
+# Conclusion 
+We conclude that the barchart shows males who took the vaccine were less likely to get infected with covid19 than the males who took the placebo.      
+The Numerical summary shows that that 74% of males who took the placebo got covid19 whereas 26% of males who took the vaccine got covid19.   
+The inferential results show that both the chi-squared test and Fisher exact test had a p-value of 0.00000000000000022.  
+The odds ratio in the Fisher exact test shows that males who took the placebo are 2.8 more times likely to get covid19 than those who took the vaccine.  
+This means we reject the null hypothesis that covid921 vaccine is not effective in males.
 
 ## Females
 $H_0$:The covid921 vaccine is not effective in females 
@@ -74,21 +82,37 @@ $H_0$:The covid921 vaccine is not effective in females
 $H_A$:The covid921 vaccine is effective in females
 
 ###  Methods
-is a categorical variable   
-is a categorical variable   
-So we use is cat~cat helper file   
+treatment is a categorical variable   
+infected is a categorical variable   
+So we use is cat~cat helper file  
 
 ### Descriptive Results 
 
 
 #### Graphical Results
+```{r}
+females=filter(FinalData,FinalData$sex=="F")
+barchartGC(~treatment + infected,data=females)
+barchartGC(~infected + treatment,data=females, type="percent")
 
+```
 
 #### Numerical Results
-
+```{r}
+table1 <- xtabs(~treatment + infected, data=females)
+rowPerc(table1)
+colPerc(table1)
+```
 
 #### Inferential Results
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
+
+# Conclusion 
 
 ## LGBTQ
 $H_0$:The covid921 vaccine is not effective in the LGBTQ community 
@@ -96,21 +120,38 @@ $H_0$:The covid921 vaccine is not effective in the LGBTQ community
 $H_A$:The covid921 vaccine is effective in the LGBTQ community
 
 ###  Methods
-Treatment is a categorical variable   
-Sex is a categorical variable   
-So we use is cat~cat helper file   
+treatment is a categorical variable   
+infected is a categorical variable   
+So we use is cat~cat helper file    
  
 ### Descriptive Results 
 
 
 #### Graphical Results
+```{r}
+LGBTQ = filter(FinalData, LGBTQ=="gay")
+```
 
+```{r}
+barchartGC(~infected + treatment,data=LGBTQ)
+barchartGC(~infected + treatment,data=LGBTQ, type="percent")
+
+```
 
 #### Numerical Results
-
+```{r}
+table1 <- xtabs(~infected + treatment, data=LGBTQ)
+rowPerc(table1)
+colPerc(table1)
+```
 
 #### Inferential Results
-
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+# Conclusion
 
 ## Drug Users
 $H_0$:The covid921 vaccine is not effective in drug users 
@@ -118,19 +159,38 @@ $H_0$:The covid921 vaccine is not effective in drug users
 $H_A$:The covid921 vaccine is effective in drug users  
 
 ### Methods
-is a categorical variable   
-is a categorical variable   
+treatment is a categorical variable   
+infected is a categorical variable   
 So we use is cat~cat helper file   
 
 ### Descriptive Results 
 
 
 #### Graphical Results
+```{r}
+DrugUser = filter(FinalData, DrugUser=="yes")
+```
 
+```{r}
+barchartGC(~infected + treatment,data=DrugUser)
+barchartGC(~infected + treatment,data=DrugUser, type="percent")
+
+```
 
 #### Numerical Results
-
+```{r}
+table1 <- xtabs(~infected + treatment, data=DrugUser)
+rowPerc(table1)
+colPerc(table1)
+```
 
 #### Inferential Results
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-# Overall Results and Conclusions
+
+
+# Conclusion. 
