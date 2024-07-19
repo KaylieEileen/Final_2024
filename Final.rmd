@@ -106,6 +106,9 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+The numerical summary shows that 65% of females who took the placebo got covid19 whereas 35% of females who took the vaccine got covid19.  
+
+
 #### Inferential Results
 ```{r}
 chisq.test(table1)
